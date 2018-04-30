@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.holdaway.jake.quickfix.SoundActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Use windows defender to protect your PC"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/defenderbtn"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@null"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/windowsdefender" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quick tutorial showing how to change playback devices if volume isnt playing." />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Windows firewall"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/troubleaudiobtn"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@null"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/windowsfirewall" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Discover features of windows firewall and how it protects your PC." />
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

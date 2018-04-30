@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.holdaway.jake.quickfix.PlaybackActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.youtube.player.YouTubePlayerView
+                android:id="@+id/youtube_view"
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+
+            </com.google.android.youtube.player.YouTubePlayerView>
+
+            <Button
+                android:id="@+id/playbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Play Video" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How to access device manager to check device status." />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Step 1: Open Control Panel.  Step 2: Enter device in the top-right search box and click Device Manager in the results.  Tip: There are two options called Device Manager, and both of them can be used to achieve the goal." />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="407dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/accessdevicemanager" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You will be able to see a list of devices currently installed or plugged into your computer click on any of these devices and press properties to learn more." />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="355dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/devicelist" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

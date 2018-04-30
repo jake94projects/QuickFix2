@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.holdaway.jake.quickfix.PlaybackActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.youtube.player.YouTubePlayerView
+                android:id="@+id/youtube_view"
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+
+            </com.google.android.youtube.player.YouTubePlayerView>
+
+            <Button
+                android:id="@+id/playbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Play Video" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How to protect your pc" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="If you have Windows 10, you’ll get the latest antivirus protection with Windows Defender. When you start up Windows 10 for the first time, Windows Defender is on and actively helping to protect your PC by scanning for malware (malicious software), viruses, and security threats. Windows Defender uses real-time protection to scan everything you download or run on your PC.  Windows Update downloads updates for Windows Defender automatically to help keep your PC safe and protect it from threats." />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/defendersearch" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Windows defender can perform a quick scan this will scan your PC for any harmful software on your PC perform regular scans to keep your PC healthy and to ensure the Ps performance isnt negatively affected." />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="351dp"
+                android:src="@drawable/defenderscan" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

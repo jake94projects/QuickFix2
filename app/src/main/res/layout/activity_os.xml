@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.holdaway.jake.quickfix.OsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/windowsimgbtn"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@null"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/winlogo" />
+
+            <TextView
+                android:id="@+id/windowstitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Windows" />
+
+            <TextView
+                android:id="@+id/windcontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Browse through Windows troubleshooting guides and fixes." />
+
+            <ImageButton
+                android:id="@+id/Macimgbtn"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@null"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/osx" />
+
+            <TextView
+                android:id="@+id/osxtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OS X" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Coming soon..." />
+
+            <ImageButton
+                android:id="@+id/Linuximgbtn"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@null"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/linuxlogo" />
+
+            <TextView
+                android:id="@+id/linuxtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Linux" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Coming soon..." />
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

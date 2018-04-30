@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.holdaway.jake.quickfix.PlaybackActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.youtube.player.YouTubePlayerView
+                android:id="@+id/youtube_view"
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+
+            </com.google.android.youtube.player.YouTubePlayerView>
+
+            <Button
+                android:id="@+id/playbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Play Video" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Manage default playback device if audio isn't playing." />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="nsure that your Windows PC has a sound card or sound processor, and it’s working properly. To check this, select the ‘Search’ option from the charms-bar, type – Device Manager’ and click ‘Settings’. Open Device Manager, double-click Sound, video and game controllers to expand that category. If a sound card is listed, you have one installed. Laptops and tablets do not usually have sound cards. Instead, they have integrated sound processors, which appear in the same category in Device Manager." />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dmanagerworking" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Type ‘Sound’ in search and select ‘Settings’. Choose ‘Sound’. Under the Playback tab section, you will find multiple audio devices; appearing as speaker, followed by the name of the device. You will also observe that the default device shows a green a check beside it, labeled as Default if you have multiple devices." />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/soundplayback" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
